@@ -1,0 +1,106 @@
+.rest{
+    background-image: url(Register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: large;
+    }
+ 
+    label{
+        font-size: x-small;
+    }
+
+    p{
+        font-size: x-small;
+    }
+
+    a{
+        font-size: x-small;
+    }
+}
+
+.parent{
+    width: auto;
+    height: 580px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+form{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 500px;
+    padding: 10px 0 20px 0;
+    color: white;
+    background: rgba(225, 225, 225, 0.168);
+    backdrop-filter: blur(5px);
+}
+
+#pword,#uname,#email{
+    width: 280px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(157, 255, 0, 0.347);
+    position: relative;
+}
+
+input:focus ~ label{
+    transform: translateY(-20px);
+}
+
+.void{
+    position: absolute;
+    left: 60px;
+    pointer-events: none;
+}
+
+img{
+    width: 20px;
+}
+
+.cbox{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.acbox{
+    display: flex;
+    align-items: center;
+}
+
+.Login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: blue;
+}
+
+button{
+    width: 280px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: white;
+    background: rgba(225, 225, 225, 0.633);
+}
